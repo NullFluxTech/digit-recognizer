@@ -1,0 +1,21 @@
+[project]
+name = "digit-recognizer"
+version = "0.1.0"
+description = "Handwritten digit recognizer (MNIST) built from scratch with NumPy"
+requires-python = ">=3.14"
+license = "AGPL-3.0-or-later"
+license-files = ["LICENSE", "LICENSE-DATA"]
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "pillow>=13.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

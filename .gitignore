@@ -1,0 +1,9 @@
+# Downloaded MNIST files and trained weights never go into git
+data/
+models/
+
+# Python / uv
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
